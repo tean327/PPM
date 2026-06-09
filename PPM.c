@@ -73,6 +73,8 @@ int main(void)
     {
         free(ppmImage->data[i]);
     }
+
+    free(fileName);
     free(ppmImage->data);
     free(ppmImage);
 }
